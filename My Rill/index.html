@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <title>For My Rill ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient-hearts" aria-hidden="true"></div>
+  <div class="sparkle-layer" aria-hidden="true"></div>
+  <div class="progress" id="progress">01 / 08</div>
+
+  <main>
+    <!-- PAGE 1 -->
+    <section class="page active" id="page1">
+      <div class="hero-heart">♥</div>
+      <p class="eyebrow">A LITTLE UNIVERSE MADE FOR YOU</p>
+      <h1>Happy Birthday,<br><span>My Rill</span> ❤️</h1>
+      <p class="subtitle">
+        To my favourite person, my safest place,<br>
+        and the most beautiful part of my life.
+      </p>
+      <p class="soft-text">
+        November 16 — the day my favourite person was born. 🥹
+      </p>
+      <button class="primary-btn next-page" data-next="2">
+        Open My Heart 💌 <span>→</span>
+      </button>
+      <p class="tiny-note">A little surprise, made with all my love.</p>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section class="page" id="page2">
+      <p class="eyebrow">WORDS I WISH I COULD SAY WHILE HOLDING YOU</p>
+      <div class="letter-wrap">
+        <div class="letter-top">♥ A LETTER FOR MY RILL ♥</div>
+        <h2>To My Special Person,</h2>
+        <div class="letter-text">
+          <p>Rill, you are not just someone I love; you are someone my heart feels at home with.</p>
+          <p>You make ordinary days feel beautiful just by being in them.</p>
+          <p>Your smile is one of my favourite sights in this entire world.</p>
+          <p>Even the smallest moments with you become memories I want to keep forever.</p>
+          <p>When life feels heavy, the thought of you brings comfort to my heart.</p>
+          <p>I love the little things about you that you may not even notice.</p>
+          <p>I love laughing with you, walking beside you, and simply being close to you.</p>
+          <p>If I could choose again, I would still want to find you in this big world.</p>
+          <p>I may not always find the perfect words, but my love for you is real.</p>
+          <p>I want to cheer for your dreams and stand beside you through the difficult days.</p>
+          <p>I want to collect a thousand more silly, sweet, unforgettable memories with you.</p>
+          <p>You deserve a life filled with peace, happiness, and all the love your heart can hold.</p>
+          <p>Thank you for being my special person and for giving my heart so many reasons to smile.</p>
+          <p>On your birthday, I wish I could wrap all my love around you like the warmest hug.</p>
+          <p>Happy Birthday, my Rill. Today and always, you will have a very special place in my heart. ❤️</p>
+        </div>
+        <p class="signature">Forever sending you my love, ♡</p>
+      </div>
+      <button class="primary-btn next-page" data-next="3">
+        Open Our Memories 🎁 →
+      </button>
+    </section>
+
+    <!-- PAGE 3 -->
+    <section class="page" id="page3">
+      <p class="eyebrow">SIX LITTLE TREASURES, JUST FOR YOU</p>
+      <h2>Open Our Memories 🎁</h2>
+      <p class="subtitle">Touch a gift, my love. A little memory is waiting inside.</p>
+
+      <div class="gift-grid">
+        <button class="gift" data-photo="photos/photo1.jpg.jpeg" data-caption="One little memory, a thousand feelings. ❤️">
+          <span class="gift-emoji">🎁</span><span>start in friendship</span><small>Tap to open</small>
+        </button>
+        <button class="gift" data-photo="photos/photo2.jpg.jpeg" data-caption="You make my world a little brighter. ✨">
+          <span class="gift-emoji">🎁</span><span>In love </span><small>Tap to open</small>
+        </button>
+        <button class="gift" data-photo="photos/photo3.jpg.jpeg" data-caption="My favourite kind of happiness is being with you. 🫶">
+          <span class="gift-emoji">🎁</span><span>forever love </span><small>Tap to open</small>
+        </button>
+        <button class="gift" data-photo="photos/photo4.jpg.jpeg" data-caption="A moment I wish I could keep forever. 💗">
+          <span class="gift-emoji">🎁</span><span>forever love</span><small>Tap to open</small>
+        </button>
+        <button class="gift" data-photo="photos/photo5.jpg.jpeg" data-caption="Every little memory with you is precious. 🎀">
+          <span class="gift-emoji">🎁</span><span>forever love</span><small>Tap to open</small>
+        </button>
+        <button class="gift" data-photo="photos/photo6.jpg.jpeg" data-caption="If I could relive a moment, I'd choose one with you. ❤️">
+          <span class="gift-emoji">🎁</span><span>Its not end</span><small>Tap to open</small>
+        </button>
+      </div>
+
+      <div class="photo-modal" id="photoModal" hidden>
+        <div class="photo-card" role="dialog" aria-modal="true" aria-label="Your memory">
+          <button class="close-modal" id="closePhoto" aria-label="Close">×</button>
+          <div class="modal-heart">♥</div>
+          <img id="modalImage" src="" alt="Our special memory">
+          <p id="modalCaption"></p>
+          <p id="photoError" class="error-message" hidden>
+            This photo could not load. Please check the photo filename in your photos folder.
+          </p>
+          <button class="secondary-btn" id="nextPhoto">Open Another Gift 🎁</button>
+        </div>
+      </div>
+
+      <button class="primary-btn next-page" data-next="4">
+        Your Birthday Surprise 🎂 →
+      </button>
+    </section>
+
+    <!-- PAGE 4 -->
+    <section class="page" id="page4">
+      <p class="eyebrow">MAKE A WISH, MY LOVE</p>
+      <h2>A Cake Made for You 🎂</h2>
+      <p class="subtitle">This little celebration is all yours, my Rill.</p>
+
+      <div class="cake-scene" id="cakeScene">
+        <div class="cake-glow"></div>
+
+        <div class="candles" id="candles">
+          <span class="candle"><i class="flame"></i></span>
+          <span class="candle"><i class="flame"></i></span>
+          <span class="candle"><i class="flame"></i></span>
+        </div>
+
+        <!-- Separate cake pieces -->
+        <div class="cake-half cake-left">
+          <div class="cake-top"></div>
+          <div class="cake-body">
+            <div class="icing"></div>
+            <div class="cake-decor">♥ ♥</div>
+          </div>
+        </div>
+
+        <div class="cake-half cake-right">
+          <div class="cake-top"></div>
+          <div class="cake-body">
+            <div class="icing"></div>
+            <div class="cake-decor">♥ ♥</div>
+          </div>
+        </div>
+
+        <div class="cake-plate"></div>
+        <div class="cake-knife" id="cakeKnife">🔪</div>
+      </div>
+
+      <p class="cake-instruction" id="cakeInstruction">
+        First, blow out the candles, my love. 🕯️
+      </p>
+
+      <button class="primary-btn" id="blowCandles" onclick="blowMyCandles()">
+        Blow the Candles 🕯️
+      </button>
+
+      <button class="secondary-btn" id="cutCake" onclick="cutMyCake()" disabled>
+        Cut the Cake 🔪
+      </button>
+
+      <p class="wish-reveal" id="cakeWish" hidden>
+        My wish for you is a life full of happiness, courage, beautiful dreams,
+        and love. I hope I get to celebrate so many more birthdays by your side.
+        Happy Birthday, my Rill! ❤️
+      </p>
+
+      <div id="confettiArea" aria-hidden="true"></div>
+
+      <button class="primary-btn next-page" data-next="5">
+        Little Things I Love About You ❤️ →
+      </button>
+    </section>
+
+    <!-- PAGE 5 -->
+    <section class="page" id="page5">
+      <p class="eyebrow">LITTLE THINGS, BIG LOVE</p>
+      <h2>You Are Always My Special Person 🖤</h2>
+      <p class="subtitle">Touch each box to unlock a little piece of my heart.</p>
+
+      <div class="message-grid">
+        <button class="message-box"><span class="box-icon">♥</span><span class="box-cover">A little secret 💌</span><span class="box-inside">You are my favourite person to talk to.</span></button>
+        <button class="message-box"><span class="box-icon">♥</span><span class="box-cover">Open my heart 💗</span><span class="box-inside">Your smile can make even my hardest day softer.</span></button>
+        <button class="message-box"><span class="box-icon">♥</span><span class="box-cover">Just for you 🫶</span><span class="box-inside">I love being the person who gets to cheer for you.</span></button>
+        <button class="message-box"><span class="box-icon">♥</span><span class="box-cover">One more thing ❤️</span><span class="box-inside">I want to make a thousand more memories with you.</span></button>
+        <button class="message-box"><span class="box-icon">♥</span><span class="box-cover">My favourite truth ✨</span><span class="box-inside">You matter to me more than I can ever explain.</span></button>
+        <button class="message-box"><span class="box-icon">♥</span><span class="box-cover">Always remember 💋</span><span class="box-inside">No matter what, you will always be special to me.</span></button>
+      </div>
+
+      <button class="primary-btn next-page" data-next="6">
+        Our Little World 📸 →
+      </button>
+    </section>
+
+    <!-- PAGE 6 -->
+    <section class="page" id="page6">
+      <p class="eyebrow">MY FAVOURITE CHAPTER IS US</p>
+      <h2>Our Little World 📸</h2>
+      <p class="subtitle">A few moments from our story that I want to keep close forever.</p>
+
+      <div class="memory-list">
+        <article class="memory-card">
+          <img src="photos/memory1.jpg.jpeg" alt="Our outing memory" loading="lazy">
+          <div><span class="memory-number">MEMORY 01</span><h3>Our Little Adventures</h3><p>Every place feels a little more special when I get to explore it with you. My favourite part of going out is always having you beside me.</p></div>
+        </article>
+        <article class="memory-card reverse">
+          <img src="photos/memory2.jpg.jpeg" alt="Our movie date" loading="lazy">
+          <div><span class="memory-number">MEMORY 02</span><h3>Movie Dates With You</h3><p>Whether the movie is amazing or ordinary, the memory becomes special because I am sharing that time with you.</p></div>
+        </article>
+        <article class="memory-card">
+          <img src="photos/memory3.jpg.jpeg" alt="Walking together" loading="lazy">
+          <div><span class="memory-number">MEMORY 03</span><h3>I'll Always Follow Your Steps</h3><p>I will keep walking beside you, cheering for you, and following our dreams together. I want to be by your side through every chapter of life. ❤️</p></div>
+        </article>
+        <article class="memory-card reverse">
+          <img src="photos/memory4.jpg.jpeg" alt="A memory of us together" loading="lazy">
+          <div><span class="memory-number">MEMORY 04</span><h3>Your Little Shadow</h3><p>I want to stay close to you like your shadow—not just today, but through the long journey of life. Wherever our path takes us, I hope we keep choosing each other.</p></div>
+        </article>
+        <article class="memory-card">
+          <img src="photos/memory5.jpg.jpeg" alt="A cosy travel memory" loading="lazy">
+          <div><span class="memory-number">MEMORY 05</span><h3>My Favourite Place to Rest</h3><p>When you rested your head on me and fell asleep while we were travelling, it felt like such a quiet, precious moment. I wish I could keep that feeling forever. 🥹</p></div>
+        </article>
+        <article class="memory-card reverse">
+          <img src="photos/memory6.jpg.jpeg" alt="One more special memory" loading="lazy">
+          <div><span class="memory-number">MEMORY 06</span><h3>Just Being Us</h3><p>We do not need every moment to be perfect. The little laughs, silly talks, and simple time together are the memories I treasure most.</p></div>
+        </article>
+      </div>
+
+      <button class="primary-btn next-page" data-next="7">
+        A Promise From My Heart 🤝 →
+      </button>
+    </section>
+
+    <!-- PAGE 7 -->
+    <section class="page" id="page7">
+      <p class="eyebrow">A PROMISE I WANT TO KEEP</p>
+      <h2>Hold My Hand, Always 🤍</h2>
+      <div class="promise-photo-wrap">
+        <img src="photos/promise.jpg.jpeg" alt="Our hands together" class="promise-photo">
+        <span class="promise-heart">♥</span>
+      </div>
+      <div class="promise-letter">
+        <p>Rill, I promise to keep holding your hand—not only when life is beautiful, but also when the road gets difficult.</p>
+        <p>I want to walk beside you, celebrate your little wins, comfort you on hard days, and keep making memories with you.</p>
+        <p>I cannot promise that every day will be perfect, but I promise to keep showing up with love, care, and an honest heart.</p>
+        <p><strong>I want to hold your hand like this, today and through the long journey of life. Will you promise to keep holding mine, too? ❤️</strong></p>
+      </div>
+      <button class="primary-btn next-page" data-next="8">
+        One Last Surprise, My Love 💌 →
+      </button>
+    </section>
+
+    <!-- PAGE 8 -->
+    <section class="page final-page" id="page8">
+      <div class="final-heart">♥</div>
+      <p class="eyebrow">AND IF I COULD WISH FOR ONE MORE THING...</p>
+      <h1>Happy Birthday,<br><span>My Rill ❤️</span></h1>
+      <div class="final-message">
+        <p>I hope this new year of your life brings you peace, joy, courage, and dreams that come true.</p>
+        <p>I hope you always know how loved and appreciated you are.</p>
+        <p>Thank you for being you, for being part of my story, and for giving me memories that I will always treasure.</p>
+        <p>Whatever tomorrow brings, I hope we keep finding little reasons to smile together.</p>
+        <p class="final-love">You are, and will always be, my special person. ❤️</p>
+      </div>
+      <p class="birthday-date">November 16 · Your special day</p>
+      <p class="tiny-note">Made with love, only for you, my Rill. 🖤🤍❤️</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
